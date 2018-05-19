@@ -1,11 +1,13 @@
 {
-  "presets": [
-    [
-      "env", {
-        "targets": {
-          "node": "current"
-        }
-      }
-    ]
-  ]
-}
+  "env": {
+     "test": {
+       "presets": [
+         ["env", {
+           "targets": {
+             "node": "current"
+           }
+         }]
+       ]
+     }
+   }
+ }

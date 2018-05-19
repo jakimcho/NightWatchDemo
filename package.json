@@ -10,10 +10,9 @@
     "e2e-report": "node create-html-report.js"
   },
   "author": "Yakim Rachev",
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "git@github.com:jakimcho/NightWatchDemo.git"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jakimcho/NightWatchDemo.git"
   },
   "license": "ISC",
   "devDependencies": {
