@@ -14,11 +14,12 @@ require('nightwatch-cucumber')({
 module.exports = {
   output_folder: 'reports',
   custom_assertions_path: '',
-  live_output: false,
+  live_output: true,
   disable_colors: false,
   page_objects_path: 'lib/page_objects',
   selenium: {
     start_process: true,
+    start_session: true,
     server_path: seleniumServer.path,
     log_path: '',
     host: '127.0.0.1',
@@ -27,9 +28,13 @@ module.exports = {
 
   test_settings: {
     default: {
-      launch_url: 'http://localhost:8087',
+      launch_url: 'http://www.pariplayltd.com/',
       selenium_port: 4444,
       selenium_host: '127.0.0.1',
+      globals : {
+        projectPath: process.env.PWD,
+        graphical_elements: this.projectPath + "/graphical_resources"
+      },
       desiredCapabilities: {
         browserName: 'chrome',
         javascriptEnabled: true,

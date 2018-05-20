@@ -11,9 +11,14 @@
       {
         "id": "game-play;reals-are-spining",
         "keyword": "Scenario",
-        "line": 10,
+        "line": 11,
         "name": "Reals are spining",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@debug",
+            "line": 10
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -22,11 +27,11 @@
             "line": 7,
             "name": "\"Games\" page is open",
             "match": {
-              "location": "lib/step_definitions/steps.js:6"
+              "location": "lib/step_definitions/steps.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 8348000000
+              "duration": 10289000000
             }
           },
           {
@@ -39,13 +44,13 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2515000000
+              "duration": 8200000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
+            "line": 12,
             "name": "I make a spin",
             "result": {
               "status": "undefined"
@@ -54,7 +59,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 13,
             "name": "reals should start spining",
             "result": {
               "status": "undefined"
@@ -63,300 +68,8 @@
           {
             "arguments": [],
             "keyword": "But ",
-            "line": 13,
+            "line": 14,
             "name": "spining should not last long",
-            "result": {
-              "status": "undefined"
-            }
-          }
-        ]
-      },
-      {
-        "id": "game-play;check-games-settings",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Check games settings",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "\"Games\" page is open",
-            "match": {
-              "location": "lib/step_definitions/steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 68000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "\"Atari Pong\" game is started",
-            "match": {
-              "location": "lib/step_definitions/steps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2202000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "I open game settings",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "home",
-                      "sound",
-                      "questions",
-                      "cup"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "I sould see game settgins:",
-            "result": {
-              "status": "undefined"
-            }
-          }
-        ]
-      },
-      {
-        "id": "game-play;check-balance-updates-after-a-spin",
-        "keyword": "Scenario",
-        "line": 20,
-        "name": "Check balance updates after a spin",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "\"Games\" page is open",
-            "match": {
-              "location": "lib/step_definitions/steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 73000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "\"Atari Pong\" game is started",
-            "match": {
-              "location": "lib/step_definitions/steps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2357000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 21,
-            "name": "spin bet is 2.00$",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "I memorize the current balance",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 23,
-            "name": "I make a spin",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "the spin finishes",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "balance should be increased by the win",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "But ",
-            "line": 26,
-            "name": "balance should be decreased by 2.00$",
-            "result": {
-              "status": "undefined"
-            }
-          }
-        ]
-      },
-      {
-        "id": "game-play;autobet-play",
-        "keyword": "Scenario",
-        "line": 28,
-        "name": "Autobet play",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "\"Games\" page is open",
-            "match": {
-              "location": "lib/step_definitions/steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 83000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "\"Atari Pong\" game is started",
-            "match": {
-              "location": "lib/step_definitions/steps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2338000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 29,
-            "name": "autobeting is set to 10 spins",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 30,
-            "name": "I make a spin",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 31,
-            "name": "reals should spin 10 times",
-            "result": {
-              "status": "undefined"
-            }
-          }
-        ]
-      },
-      {
-        "id": "game-play;autobet-play",
-        "keyword": "Scenario",
-        "line": 33,
-        "name": "Autobet play",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "\"Games\" page is open",
-            "match": {
-              "location": "lib/step_definitions/steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 75000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "\"Atari Pong\" game is started",
-            "match": {
-              "location": "lib/step_definitions/steps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2301000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 34,
-            "name": "I do spins until a win",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 35,
-            "name": "correct win win is drawn",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "the win price is correct",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "balance should be increased by the win",
             "result": {
               "status": "undefined"
             }

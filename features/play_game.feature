@@ -7,6 +7,7 @@ Background:
   Given "Games" page is open
   And "Atari Pong" game is started
 
+  @debug
   Scenario: Reals are spining
     When I make a spin
     Then reals should start spining
