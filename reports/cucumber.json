@@ -31,7 +31,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10289000000
+              "duration": 8367000000
             }
           },
           {
@@ -44,7 +44,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8200000000
+              "duration": 27907000000
             }
           },
           {
@@ -52,8 +52,12 @@
             "keyword": "When ",
             "line": 12,
             "name": "I make a spin",
+            "match": {
+              "location": "lib/step_definitions/steps.js:22"
+            },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 6359000000
             }
           },
           {
@@ -61,8 +65,12 @@
             "keyword": "Then ",
             "line": 13,
             "name": "reals should start spining",
+            "match": {
+              "location": "lib/step_definitions/steps.js:27"
+            },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 13733000000
             }
           },
           {
@@ -70,8 +78,13 @@
             "keyword": "But ",
             "line": 14,
             "name": "spining should not last long",
+            "match": {
+              "location": "lib/step_definitions/steps.js:32"
+            },
             "result": {
-              "status": "undefined"
+              "status": "failed",
+              "duration": 14133000000,
+              "error_message": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(differences < 3)\n\n    + expected - actual\n\n    -false\n    +true\n\n    at Proxy.checkRealsDontSpin (/Users/yakimfb/workspace-node/NightWatchDemo/lib/page_objects/games.js:96:19)"
             }
           }
         ]

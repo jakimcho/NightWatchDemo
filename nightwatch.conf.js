@@ -4,7 +4,6 @@ const geckodriver = require('geckodriver');
 
 require('nightwatch-cucumber')({
   cucumberArgs: [
-    //'--require-module', 'babel-core/register',
     '--require', 'lib/step_definitions',
     '--format', 'json:reports/cucumber.json',
     //'--format', 'node_modules/cucumber-pretty',
