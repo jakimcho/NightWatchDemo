@@ -26,6 +26,11 @@ module.exports = {
   },
 
   test_settings: {
+    screenshots : {
+      enabled : true,
+      on_failure : true,
+      path: 'screenshots/default'
+    },
     default: {
       launch_url: 'http://www.pariplayltd.com/',
       selenium_port: 4444,

@@ -1,3 +1,4 @@
 node_modules/
 **/*.log
 graphical_resources/tmp/**/*
+reports/**/*

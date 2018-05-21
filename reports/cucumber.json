@@ -29,7 +29,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16019000000
+              "duration": 16308000000
             }
           },
           {
@@ -42,7 +42,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 319000000
+              "duration": 64000000
             }
           },
           {
@@ -55,7 +55,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24848000000
+              "duration": 23382000000
             }
           },
           {
@@ -68,7 +68,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4414000000
+              "duration": 4216000000
             }
           },
           {
@@ -81,7 +81,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18871000000
+              "duration": 16030000000
             }
           },
           {
@@ -94,7 +94,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16587000000
+              "duration": 13942000000
             }
           },
           {
@@ -105,7 +105,401 @@
             },
             "result": {
               "status": "passed",
-              "duration": 200000000
+              "duration": 118000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "game-play;check-games-settings",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Check games settings",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "lib/step_definitions/steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17952000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "\"Games\" page is open",
+            "match": {
+              "location": "lib/step_definitions/steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "\"Atari Pong\" game is started",
+            "match": {
+              "location": "lib/step_definitions/steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23093000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I open game settings",
+            "match": {
+              "location": "lib/step_definitions/steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4144000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "home",
+                      "sound",
+                      "questions",
+                      "cup"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I sould see game settgins:",
+            "match": {
+              "location": "lib/step_definitions/steps.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "lib/step_definitions/steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "game-play;check-balance-updates-after-a-spin",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Check balance updates after a spin",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "lib/step_definitions/steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22244000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "\"Games\" page is open",
+            "match": {
+              "location": "lib/step_definitions/steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "\"Atari Pong\" game is started",
+            "match": {
+              "location": "lib/step_definitions/steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23093000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "spin bet is 2.00$",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I memorize the current balance",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I make a spin",
+            "match": {
+              "location": "lib/step_definitions/steps.js:30"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "the spin finishes",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "balance should be increased by the win",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "But ",
+            "line": 27,
+            "name": "balance should be decreased by 2.00$",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "lib/step_definitions/steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "game-play;autobet-play",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Autobet play",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "lib/step_definitions/steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22316000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "\"Games\" page is open",
+            "match": {
+              "location": "lib/step_definitions/steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "\"Atari Pong\" game is started",
+            "match": {
+              "location": "lib/step_definitions/steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22900000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "autobeting is set to 10 spins",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I make a spin",
+            "match": {
+              "location": "lib/step_definitions/steps.js:30"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "reals should spin 10 times",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "lib/step_definitions/steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 118000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "game-play;autobet-play",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "Autobet play",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "lib/step_definitions/steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18849000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "\"Games\" page is open",
+            "match": {
+              "location": "lib/step_definitions/steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "\"Atari Pong\" game is started",
+            "match": {
+              "location": "lib/step_definitions/steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23009000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I do spins until a win",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "correct win win is drawn",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "the win price is correct",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "balance should be increased by the win",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "lib/step_definitions/steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129000000
             }
           }
         ]
