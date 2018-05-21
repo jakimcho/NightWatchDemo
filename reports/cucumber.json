@@ -22,16 +22,27 @@
         "type": "scenario",
         "steps": [
           {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "\"Games\" page is open",
+            "keyword": "Before",
+            "hidden": true,
             "match": {
               "location": "lib/step_definitions/steps.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 8367000000
+              "duration": 16019000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "\"Games\" page is open",
+            "match": {
+              "location": "lib/step_definitions/steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 319000000
             }
           },
           {
@@ -40,11 +51,11 @@
             "line": 8,
             "name": "\"Atari Pong\" game is started",
             "match": {
-              "location": "lib/step_definitions/steps.js:13"
+              "location": "lib/step_definitions/steps.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 27907000000
+              "duration": 24848000000
             }
           },
           {
@@ -53,11 +64,11 @@
             "line": 12,
             "name": "I make a spin",
             "match": {
-              "location": "lib/step_definitions/steps.js:22"
+              "location": "lib/step_definitions/steps.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 6359000000
+              "duration": 4414000000
             }
           },
           {
@@ -66,11 +77,11 @@
             "line": 13,
             "name": "reals should start spining",
             "match": {
-              "location": "lib/step_definitions/steps.js:27"
+              "location": "lib/step_definitions/steps.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 13733000000
+              "duration": 18871000000
             }
           },
           {
@@ -79,12 +90,22 @@
             "line": 14,
             "name": "spining should not last long",
             "match": {
-              "location": "lib/step_definitions/steps.js:32"
+              "location": "lib/step_definitions/steps.js:45"
             },
             "result": {
-              "status": "failed",
-              "duration": 14133000000,
-              "error_message": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(differences < 3)\n\n    + expected - actual\n\n    -false\n    +true\n\n    at Proxy.checkRealsDontSpin (/Users/yakimfb/workspace-node/NightWatchDemo/lib/page_objects/games.js:96:19)"
+              "status": "passed",
+              "duration": 16587000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "lib/step_definitions/steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 200000000
             }
           }
         ]
